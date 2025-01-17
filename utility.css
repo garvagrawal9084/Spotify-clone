@@ -1,0 +1,140 @@
+.bg-grey {
+  background-color: #121212;
+  color: white;
+}
+
+.bg-black {
+  background-color: black;
+  color: white;
+}
+.invert {
+  filter: invert(1);
+}
+
+.rounded {
+  border-radius: 7px;
+}
+
+.p-1 {
+  padding: 20px;
+}
+
+.m-1 {
+  margin: 5px;
+}
+
+.font {
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.font2 {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 700;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #2e2e2e; /* Track color (dark background) */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4a4a; /* Thumb color (darker grey) */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6a6a6a; /* Thumb color on hover (lighter grey) */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Makes the scrollbar thinner */
+  scrollbar-color: #4a4a4a #2e2e2e; /* Thumb color and track color */
+}
+
+/* Optional: Ensure scrollbar is visible on hover */
+.scrollable-container:hover .scrollable-content::-webkit-scrollbar {
+  width: 12px; /* Ensure scrollbar width on hover */
+}
+
+.scrollable-content {
+  height: 100%; /* Ensure content is scrollable */
+  overflow: auto; /* Enable scrolling */
+}
+
+/* Base style for the range input */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #333; /* Dark background for the track */
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+input[type="range"]:hover {
+  opacity: 1; /* Slightly increase opacity on hover */
+}
+
+/* Thumb style for WebKit browsers (Chrome, Safari, etc.) */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff; /* White thumb for contrast */
+  cursor: pointer;
+  box-shadow: 0 0 2px #000; /* Subtle shadow for the thumb */
+  transition: background 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #f0f0f0; /* Slightly lighter thumb on hover */
+}
+
+/* Thumb style for Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff; /* White thumb for contrast */
+  cursor: pointer;
+  box-shadow: 0 0 2px #000; /* Subtle shadow for the thumb */
+  transition: background 0.2s;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background: #f0f0f0; /* Slightly lighter thumb on hover */
+}
+
+/* Track style for Firefox */
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  background: #333; /* Dark background for the track */
+  border-radius: 5px;
+}
+
+/* Focus style */
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 8px #666; /* Glow effect on focus */
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  box-shadow: 0 0 8px #666; /* Glow effect on focus */
+}
